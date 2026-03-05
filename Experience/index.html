@@ -63,7 +63,7 @@
         <article class="post-content clearfix">
 
           <!-- Zenteiq -->
-          <div class="exp-card">
+          <div class="exp-card reveal">
             <h3>Scientific Machine Learning Engineer <span class="exp-year">May 2025 – Present</span></h3>
             <h4><a href="https://zenteiq.ai/" target="_blank">Zenteiq.ai, Indian Institute of Science (IISc),
                 Bangalore</a></h4>
@@ -74,7 +74,7 @@
           </div>
 
           <!-- NIT KKR Research Scholar -->
-          <div class="exp-card">
+          <div class="exp-card reveal">
             <h3>Research Scholar <span class="exp-year">May 2024 – May 2025</span></h3>
             <h4><a href="http://www.nitkkr.ac.in/" target="_blank">National Institute of Technology, Kurukshetra</a>
             </h4>
@@ -86,7 +86,7 @@
           </div>
 
           <!-- NIT KKR Research Intern -->
-          <div class="exp-card">
+          <div class="exp-card reveal">
             <h3>Research Intern <span class="exp-year">Aug 2023 – May 2024</span></h3>
             <h4><a href="http://www.nitkkr.ac.in/" target="_blank">National Institute of Technology, Kurukshetra</a>
             </h4>
@@ -121,52 +121,75 @@
   <script src="/assets/js/katex.js"></script>
 
   <style>
-    /* Match style from projects page */
     .exp-card {
-      background: #fafafa;
-      border-left: 4px solid #f39c12;
-      padding: 1rem 1.5rem;
-      margin-bottom: 2rem;
-      border-radius: 6px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      background: var(--white);
+      border-left: 5px solid var(--primary);
+      padding: 1.5rem 2rem;
+      margin-bottom: 2.5rem;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      transition: var(--transition);
     }
 
     .exp-card:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      border-left-color: #e67e22;
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+      border-left-color: var(--accent);
     }
 
     .exp-card h3 {
       margin-top: 0;
-      font-size: 1.25rem;
-      color: #2c3e50;
+      font-size: 1.35rem;
+      color: var(--secondary);
+      font-weight: 700;
     }
 
     .exp-card h4 {
-      margin: 0.25rem 0 0.75rem;
-      color: #444;
+      margin: 0.5rem 0 1rem;
+      color: var(--text-light);
+      font-weight: 500;
     }
 
     .exp-year {
       font-size: 0.9rem;
-      color: #95a5a6;
+      color: var(--primary);
       float: right;
+      background: rgba(100, 108, 255, 0.1);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-weight: 600;
     }
 
     .exp-card ul {
-      margin: 0.5rem 0 0;
+      margin: 1rem 0 0;
+      padding-left: 1.2rem;
+      color: var(--text);
     }
 
     @media (max-width: 600px) {
       .exp-year {
         float: none;
-        display: block;
-        margin-bottom: 0.5rem;
+        display: inline-block;
+        margin-top: 0.5rem;
       }
     }
   </style>
+
+  <script>
+    function reveal() {
+      const reveals = document.querySelectorAll('.reveal');
+      reveals.forEach(element => {
+        const windowHeight = window.innerHeight;
+        const elementTop = element.getBoundingClientRect().top;
+        const revealPoint = 100;
+        if (elementTop < windowHeight - revealPoint) {
+          element.classList.add('active');
+        }
+      });
+    }
+    window.addEventListener('scroll', reveal);
+    window.addEventListener('load', reveal);
+  </script>
 
 </body>
 

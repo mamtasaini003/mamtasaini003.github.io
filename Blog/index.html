@@ -63,7 +63,7 @@
         <article class="post-content clearfix">
 
           <!-- Blog Block 1 -->
-          <div class="blog-card">
+          <div class="blog-card reveal">
             <h3>Introduction</h3>
             <p>
               Neural Operators are a new class of deep learning models designed to learn mappings between
@@ -74,7 +74,7 @@
           </div>
 
           <!-- Blog Block 2 -->
-          <div class="blog-card">
+          <div class="blog-card reveal">
             <h3>Why Neural Operators?</h3>
             <ul>
               <li>Enable fast and accurate solutions to complex PDEs.</li>
@@ -84,7 +84,7 @@
           </div>
 
           <!-- Blog Block 3 -->
-          <div class="blog-card">
+          <div class="blog-card reveal">
             <h3>Key Concepts</h3>
             <p>
               The most popular neural operator architecture is the <b>Fourier Neural Operator (FNO)</b>, which leverages
@@ -94,7 +94,7 @@
           </div>
 
           <!-- Blog Block 4 -->
-          <div class="blog-card">
+          <div class="blog-card reveal">
             <h3>Applications</h3>
             <ul>
               <li>Weather prediction</li>
@@ -104,10 +104,8 @@
             </ul>
           </div>
 
-          <!-- Blog Block 4 -->
-
           <!-- Blog Block 5 -->
-          <div class="blog-card">
+          <div class="blog-card reveal">
             <h3>Further Reading</h3>
             <ul>
               <li><a href="https://arxiv.org/abs/2010.08895" target="_blank">Fourier Neural Operator for Parametric
@@ -142,42 +140,62 @@
   <!-- Reuse the same styles from experience -->
   <style>
     .blog-card {
-      background: #fafafa;
-      border-left: 4px solid #4F8EF7;
-      padding: 1rem 1.5rem;
-      margin-bottom: 2rem;
-      border-radius: 6px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      background: var(--white);
+      border-left: 5px solid var(--primary);
+      padding: 1.5rem 2rem;
+      margin-bottom: 2.5rem;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      transition: var(--transition);
     }
 
     .blog-card:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      border-left-color: #2a6edb;
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+      border-left-color: var(--accent);
     }
 
     .blog-card h3 {
       margin-top: 0;
-      font-size: 1.25rem;
-      color: #2c3e50;
+      font-size: 1.35rem;
+      color: var(--secondary);
+      font-weight: 700;
     }
 
     .blog-card ul {
-      margin: 0.5rem 0 0;
+      margin: 1rem 0 0;
       padding-left: 1.2rem;
+      color: var(--text);
     }
 
     .blog-card p {
-      margin: 0.5rem 0;
+      margin: 0.75rem 0;
+      line-height: 1.6;
     }
 
     .post-title {
-      font-size: 2rem;
+      font-size: 2.5rem;
       margin-bottom: 2rem;
-      color: #2c3e50;
+      color: var(--secondary);
+      font-weight: 800;
     }
   </style>
+
+  <script>
+    function reveal() {
+      const reveals = document.querySelectorAll('.reveal');
+      reveals.forEach(element => {
+        const windowHeight = window.innerHeight;
+        const elementTop = element.getBoundingClientRect().top;
+        const revealPoint = 100;
+        if (elementTop < windowHeight - revealPoint) {
+          element.classList.add('active');
+        }
+      });
+    }
+    window.addEventListener('scroll', reveal);
+    window.addEventListener('load', reveal);
+  </script>
 
 </body>
 
