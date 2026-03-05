@@ -63,7 +63,7 @@
         <article class="post-content clearfix">
 
           <!-- Blog Block 1 -->
-          <div class="exp-card">
+          <div class="blog-card">
             <h3>Introduction</h3>
             <p>
               Neural Operators are a new class of deep learning models designed to learn mappings between
@@ -74,7 +74,7 @@
           </div>
 
           <!-- Blog Block 2 -->
-          <div class="exp-card">
+          <div class="blog-card">
             <h3>Why Neural Operators?</h3>
             <ul>
               <li>Enable fast and accurate solutions to complex PDEs.</li>
@@ -84,7 +84,7 @@
           </div>
 
           <!-- Blog Block 3 -->
-          <div class="exp-card">
+          <div class="blog-card">
             <h3>Key Concepts</h3>
             <p>
               The most popular neural operator architecture is the <b>Fourier Neural Operator (FNO)</b>, which leverages
@@ -94,7 +94,7 @@
           </div>
 
           <!-- Blog Block 4 -->
-          <div class="exp-card">
+          <div class="blog-card">
             <h3>Applications</h3>
             <ul>
               <li>Weather prediction</li>
@@ -107,7 +107,7 @@
           <!-- Blog Block 4 -->
 
           <!-- Blog Block 5 -->
-          <div class="exp-card">
+          <div class="blog-card">
             <h3>Further Reading</h3>
             <ul>
               <li><a href="https://arxiv.org/abs/2010.08895" target="_blank">Fourier Neural Operator for Parametric
@@ -141,33 +141,41 @@
 
   <!-- Reuse the same styles from experience -->
   <style>
-    .exp-card {
+    .blog-card {
       background: #fafafa;
       border-left: 4px solid #4F8EF7;
       padding: 1rem 1.5rem;
       margin-bottom: 2rem;
       border-radius: 6px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
-    .exp-card h3 {
+    .blog-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border-left-color: #2a6edb;
+    }
+
+    .blog-card h3 {
       margin-top: 0;
       font-size: 1.25rem;
-      color: #2b2d42;
+      color: #2c3e50;
     }
 
-    .exp-card ul {
+    .blog-card ul {
       margin: 0.5rem 0 0;
       padding-left: 1.2rem;
     }
 
-    .exp-card p {
+    .blog-card p {
       margin: 0.5rem 0;
     }
 
     .post-title {
       font-size: 2rem;
       margin-bottom: 2rem;
+      color: #2c3e50;
     }
   </style>
 
