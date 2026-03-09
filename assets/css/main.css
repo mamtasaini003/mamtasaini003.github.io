@@ -1353,6 +1353,20 @@ figcaption {
   width: 100%;
 }
 
+.left {
+  float: left !important;
+}
+
+.right {
+  float: right !important;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .caption {
   height: 100%;
   color: #aaa;
