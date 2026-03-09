@@ -64,12 +64,14 @@
 
           <!-- Zenteiq -->
           <div class="exp-card reveal">
-            <h3>Scientific Machine Learning Engineer <span class="exp-year">May 2025 – Present</span></h3>
+            <h3>Research Assistant <span class="exp-year">May 2025 – Present</span></h3>
             <h4><a href="https://zenteiq.ai/" target="_blank">Zenteiq.ai, Indian Institute of Science (IISc),
                 Bangalore</a></h4>
             <ul>
-              <li>Developing Physics-Informed Neural Networks (PINNs) and Geometry-Informed Neural Operators (GINOs) for
-                accurate prediction of magnetic fields in stator geometries.</li>
+              <li>Working on high-impact <b>industrial problem statements</b> involving magnetic field prediction in complex stator geometries.</li>
+              <li>Implementing and optimizing <b>Fourier Neural Operators (FNOs)</b> and <b>Wavelet Neural Operators (WNOs)</b> for multi-scale physical systems.</li>
+              <li>Developing <b>Geometry-aware variants (G-FNO, G-WNO)</b> and <b>GINOs</b> to handle irregular domains and complex boundary conditions.</li>
+              <li>Building physics-constrained solvers using <b>PINNs</b> to ensure adherence to Maxwell's equations and conservation laws.</li>
             </ul>
           </div>
 
@@ -175,21 +177,6 @@
     }
   </style>
 
-  <script>
-    function reveal() {
-      const reveals = document.querySelectorAll('.reveal');
-      reveals.forEach(element => {
-        const windowHeight = window.innerHeight;
-        const elementTop = element.getBoundingClientRect().top;
-        const revealPoint = 100;
-        if (elementTop < windowHeight - revealPoint) {
-          element.classList.add('active');
-        }
-      });
-    }
-    window.addEventListener('scroll', reveal);
-    window.addEventListener('load', reveal);
-  </script>
 
 </body>
 

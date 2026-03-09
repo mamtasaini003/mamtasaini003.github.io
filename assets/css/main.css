@@ -844,8 +844,8 @@ em img {
   --secondary: hsl(210, 25%, 25%);
   --accent: hsl(280, 75%, 65%);
   --bg: hsl(210, 30%, 98%);
-  --text: hsl(210, 20%, 20%);
-  --text-light: hsl(210, 15%, 45%);
+  --text: #111111;
+  --text-light: #444444;
   --white: #ffffff;
   --glass: rgba(255, 255, 255, 0.7);
   --border: rgba(0, 0, 0, 0.08);
@@ -1478,8 +1478,8 @@ html {
 }
 
 body {
-  color: #666;
-  font-weight: 100;
+  color: #111;
+  font-weight: 400;
 }
 
 abbr {
@@ -1488,7 +1488,7 @@ abbr {
 }
 
 p {
-  color: #333;
+  color: #000;
   line-height: 1.5;
 }
 
