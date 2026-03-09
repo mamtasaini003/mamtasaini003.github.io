@@ -10,7 +10,7 @@
     <meta name="description" content="Mamta's research projects in Scientific Machine Learning and Neural Operators.">
 
     <link rel="shortcut icon" href="/assets/img/favicon.ico">
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="canonical" href="/Projects/">
 
     <!-- FontAwesome for icons -->
@@ -156,7 +156,7 @@
 
     <!-- Scripts -->
     <script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="/assets/js/common.js"></script>
+    <script src="../assets/js/common.js"></script>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.js"></script>
     <script src="/assets/js/katex.js"></script>
@@ -230,21 +230,6 @@
     }
   </style>
 
-  <script>
-    function reveal() {
-      const reveals = document.querySelectorAll('.reveal');
-      reveals.forEach(element => {
-        const windowHeight = window.innerHeight;
-        const elementTop = element.getBoundingClientRect().top;
-        const revealPoint = 100;
-        if (elementTop < windowHeight - revealPoint) {
-          element.classList.add('active');
-        }
-      });
-    }
-    window.addEventListener('scroll', reveal);
-    window.addEventListener('load', reveal);
-  </script>
 
 </body>
 
