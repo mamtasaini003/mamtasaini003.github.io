@@ -1353,6 +1353,41 @@ figcaption {
   width: 100%;
 }
 
+.post-content.about-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.bio-column {
+  flex: 2;
+  min-width: 0;
+}
+
+.image-column {
+  flex: 1;
+  max-width: 300px;
+  min-width: 200px;
+}
+
+.image-column img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  .post-content.about-flex {
+    flex-direction: column;
+  }
+  .image-column {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
 .left {
   float: left !important;
 }
