@@ -16,6 +16,170 @@
 
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="canonical" href="/">
+<style>
+
+    .edu-card {
+      background: var(--white);
+      border-left: 5px solid var(--primary);
+      padding: 1.5rem 2rem;
+      margin-bottom: 2.5rem;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+    }
+
+    .edu-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+      border-left-color: var(--accent);
+    }
+
+    .edu-card h3 {
+      margin-top: 0;
+      font-size: 1.35rem;
+      color: var(--secondary);
+      font-weight: 700;
+    }
+
+    .edu-card h4 {
+      margin: 0.5rem 0 1rem;
+      color: var(--text-light);
+      font-weight: 500;
+    }
+
+    .edu-year {
+      font-size: 0.9rem;
+      color: var(--primary);
+      float: right;
+      background: rgba(100, 108, 255, 0.1);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-weight: 600;
+    }
+
+    .edu-card ul {
+      margin: 1rem 0 0;
+      padding-left: 1.2rem;
+      color: var(--text);
+    }
+
+    @media (max-width: 600px) {
+      .edu-year {
+        float: none;
+        display: inline-block;
+        margin-top: 0.5rem;
+      }
+    }
+
+.project-card {
+      background: var(--white);
+      border-left: 5px solid var(--primary);
+      padding: 1.5rem 2rem;
+      margin-bottom: 2.5rem;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+      border-left-color: var(--accent);
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+      font-size: 1.35rem;
+      color: var(--secondary);
+      font-weight: 700;
+      line-height: 1.3;
+    }
+
+    .project-card h4 {
+      margin: 0.5rem 0 1rem;
+      font-size: 1rem;
+    }
+
+    .project-card h4 a {
+      color: var(--text-light);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .project-card h4 a:hover {
+      color: var(--primary);
+    }
+
+    .project-year {
+      font-size: 0.85rem;
+      color: var(--primary);
+      float: right;
+      background: rgba(100, 108, 255, 0.1);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-weight: 600;
+    }
+
+    .project-card ul {
+      margin: 1rem 0 0;
+      padding-left: 1.2rem;
+      color: var(--text);
+    }
+
+    .project-card li {
+      margin-bottom: 0.75rem;
+    }
+
+    @media (max-width: 600px) {
+      .project-year {
+        float: none;
+        display: inline-block;
+        margin-top: 0.5rem;
+      }
+    }
+.blog-card {
+      background: var(--white);
+      border-left: 5px solid var(--primary);
+      padding: 1.5rem 2rem;
+      margin-bottom: 2.5rem;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+    }
+
+    .blog-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+      border-left-color: var(--accent);
+    }
+
+    .blog-card h3 {
+      margin-top: 0;
+      font-size: 1.35rem;
+      color: var(--secondary);
+      font-weight: 700;
+    }
+
+    .blog-card ul {
+      margin: 1rem 0 0;
+      padding-left: 1.2rem;
+      color: var(--text);
+    }
+
+    .blog-card p {
+      margin: 0.75rem 0;
+      line-height: 1.6;
+    }
+
+    .post-title {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: var(--secondary);
+      font-weight: 800;
+    }
+  
+</style>
+
 </head>
 
 
@@ -25,28 +189,16 @@
     <div class="wrapper">
       <span class="site-title"><strong>Mamta</strong> Saini</span>
       <nav class="site-nav">
-        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-        <label for="nav-trigger">
-          <span class="menu-icon">
-            <svg viewBox="0 0 18 15" width="18px" height="15px">
-              <path fill="#424242"
-                d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z" />
-              <path fill="#424242"
-                d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z" />
-              <path fill="#424242"
-                d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z" />
-            </svg>
-          </span>
-        </label>
+        
+        
 
-        <div class="trigger">
-          <a class="page-link" href="/">About</a>
-          <a class="page-link" href="/Education">Education</a>
-          <a class="page-link" href="/Experience">Experience</a>
-          <a class="page-link" href="/Projects">Projects</a>
-          <a class="page-link" href="/Publications">Publications</a>
-          <a class="page-link" href="/Blog">Blog</a>
-          <a class="page-link" href="/PDFs/Mamta CV.pdf">Download CV</a>
+                <div class="trigger">
+          <a class="page-link" href="#about" style="font-size: 0.85em; font-weight: normal;">About</a>
+          <a class="page-link" href="#experience" style="font-size: 0.85em; font-weight: normal;">Experience</a>
+          <a class="page-link" href="#publications" style="font-size: 0.85em; font-weight: normal;">Publications</a>
+          <a class="page-link" href="#projects" style="font-size: 0.85em; font-weight: normal;">Projects</a>
+          <a class="page-link" href="#blog" style="font-size: 0.85em; font-weight: normal;">Blog</a>
+          <a class="page-link" href="/PDFs/Mamta CV.pdf" style="font-size: 0.85em; font-weight: normal;">Download CV</a>
         </div>
       </nav>
     </div>
@@ -62,40 +214,82 @@
           <h3 class="post-description">Hello, I am</h3>
           <h1 class="post-title"><strong>Mamta Saini &nbsp; </strong> </h1>
           <!-- <h3 class = "post-description"> ML | SCI ML | DA | QPA | ETL </h3> -->
-          <h5 class="post-description"><a href="https://zenteiq.ai/"> Scientific Machine Learning Engineer at Zenteiq
-              Aitech, IISc Bangalore, India</a>.</h5>
+          <h5 class="post-description">Research Associate, Indian Institute of Science</h5>
         </header>
 
-        <article class="post-content about-flex clearfix">
+        <article id="about" class="post-content about-flex clearfix">
 
           <div class="bio-column">
             <p>
-I work at the intersection of surrogate modeling and scientific machine learning, building data-driven models for complex systems governed by partial differential equations. My experience spans industrial electromagnetics, where I developed SciML surrogates for Maxwell solvers using PINNs, VPINNs/FastVPINNs, and neural operators such as FNO, WNO, and GINO, with GPU-optimized pipelines that significantly reduced training time for large-scale simulations. Recently, my interests have shifted toward transformer-based architectures for PDE generalization and latent-space optimization, including hybrid operator models and the Latent Reciprocity Network (LRN) for robust, geometry-aware generalization across equations.
+              I am a Research Associate at the <strong>Indian Institute of Science (IISc), Bangalore</strong>, hosted by Prof. Sashikumaar Ganesan. I am currently contributing to the development of India's first Scientific Foundation Model. I obtained my Master of Science in Mathematics from the National Institute of Technology, Kurukshetra (2023-2025), mentored by Prof. A.S.V. Ravi Kanth. Previously, I obtained a B.S. in Mathematics (Honours) at the University of Delhi (2020-2023). <strong style="font-weight: bold;">I am actively looking for a PhD position.</strong>
             </p>
 
             <p>
-              <strong>Research Interests:</strong> AI for Science; Foundation Models; Neurosymbolic AI; Scientific Machine Learning; Physics-Informed Neural Networks; Operator Learning; Meta-Learned Universal Solvers; Latent Representations Structure
+              My long-term goal is to bridge the gap between theoretical machine learning and <strong>AI for Industry</strong>, deploying robust methods for scientific computing and discovery where AI faces complex real-world challenges. Specifically, I pioneer the application of physics-informed neural networks (PINNs), operator learning, scientific machine learning (SciML), and scientific foundation models to solve partial differential equations (PDEs) arising in industrial engineering. By building physics-aware architectures capable of learning from sparse data, these models directly accelerate industrial pipelines, with applications spanning from predicting magnetic fields in large-scale stator geometries to designing robust foundation models that safely generalize across industrial PDEs.
             </p>
 
-            <p> 
-             My current hobbies include cycling, cooking, sketching, and occasionally experimenting with new ways to visualize mathematical and physical concepts through art and diagrams. I am always interested in discussing new ideas and collaborating with people working at the intersection of mathematics, physics, and machine learning.
+            <p>
+              <strong>Research Interests:</strong> AI for Science; Foundation Models; Neurosymbolic AI; Scientific Machine Learning; Physics-Informed Neural Networks; Operator Learning; Meta-Learned Universal Solvers; Latent Representations Structure.
             </p>
 
-          </div>
+            <p>
+              If any of my research excites you, or if you just want to talk about blending deep learning with the physical sciences, I am always open for collaboration and chats. When I step away from research, you can find me cycling, cooking, sketching, or experimenting with novel ways to visualize complex mathematical concepts through generative diagrams.
+            </p>
+</div>
 
           <div class="image-column">
-            <img src="/img/Mamta.jpg" alt="Mamta Saini">
+            <img src="img/mamta_final.jpeg" alt="Mamta Saini">
           </div>
 
         </article>
 
         <div class="skills-section" style="margin-top: 40px; margin-bottom: 20px;">
-          <h2 style="font-size: 1.5rem; color: var(--secondary); margin-bottom: 15px; font-weight: 700; border-bottom: 2px solid var(--primary); padding-bottom: 5px; display: inline-block;">Technical Skills</h2>
+          <h2 style="font-size: 1.5rem; color: var(--secondary); margin-bottom: 15px; font-weight: 500; border-bottom: 2px solid var(--primary); padding-bottom: 5px; display: inline-block;">Technical Skills</h2>
           <ul style="list-style-type: disc; margin-left: 20px; line-height: 1.8; color: var(--text);">
             <li><strong>Scientific Computing:</strong> GPU computing, Python, Gmsh, ParaView, CUDA, TensorFlow, Scikit-learn, NumPy, Pandas, Matplotlib, SciPy, SymPy</li>
             <li><strong>Research Tools:</strong> Version Control, LaTeX, VSCode, Vim, Jupyter, Markdown, ClearML</li>
           </ul>
         </div>
+<hr>
+
+<div id="experience" style="padding-top: 60px; margin-top: -40px;"></div><hr>
+<div id="publications" style="padding-top: 60px; margin-top: -40px;"></div><hr>
+<div id="projects" style="padding-top: 60px; margin-top: -40px;"></div><hr>
+<div id="blog" style="padding-top: 60px; margin-top: -40px;"></div><hr>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    function loadSection(id, url) {
+        fetch(url + '?v=' + new Date().getTime(), { cache: 'no-store' })
+            .then(response => response.text())
+            .then(data => {
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(data, 'text/html');
+                let header = doc.querySelector('.post-header');
+                let content = doc.querySelector('.post-content');
+                
+                let headerHTML = header ? header.innerHTML : '';
+                let contentHTML = content ? content.innerHTML : '';
+                
+                // Convert h1 to h2
+                headerHTML = headerHTML.replace(/<h1 class="post-title">/g, '<h2 style="font-size: 1.5rem; color: var(--secondary); margin-bottom: 15px; font-weight: 500; border-bottom: 2px solid var(--primary); padding-bottom: 5px; display: inline-block;">').replace(/<\/h1>/g, '</h2>');
+                
+                let targetDiv = document.getElementById(id);
+                if(targetDiv) {
+                    targetDiv.innerHTML = '<header class="post-header">' + headerHTML + '</header><article class="post-content clearfix">' + contentHTML + '</article>';
+                }
+            })
+            .catch(err => console.error('Error loading ' + url, err));
+    }
+
+    loadSection('experience', 'Experience/index.html');
+    loadSection('projects', 'Projects/index.html');
+    loadSection('publications', 'Publications/index.html');
+    loadSection('blog', 'Blog/index.html');
+});
+</script>
+
+
 
 
 
