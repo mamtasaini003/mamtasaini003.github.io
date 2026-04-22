@@ -19,6 +19,73 @@
 <style>
 .wrapper { max-width: 1000px !important; margin: 0 auto !important; padding: 0 15px !important; }
 
+    .project-card {
+      background: var(--white);
+      border-left: 5px solid var(--primary);
+      padding: 1.5rem 2rem;
+      margin-bottom: 2.5rem;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+      border-left-color: var(--accent);
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+      font-size: 1.35rem;
+      color: var(--secondary);
+      font-weight: 700;
+      line-height: 1.3;
+    }
+
+    .project-card h4 {
+      margin: 0.5rem 0 1rem;
+      font-size: 1rem;
+    }
+
+    .project-card h4 a {
+      color: var(--text-light);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .project-card h4 a:hover {
+      color: var(--primary);
+    }
+
+    .project-year {
+      font-size: 0.85rem;
+      color: var(--primary);
+      float: right;
+      background: rgba(100, 108, 255, 0.1);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-weight: 600;
+    }
+
+    .project-card ul {
+      margin: 1rem 0 0;
+      padding-left: 1.2rem;
+      color: var(--text);
+    }
+
+    .project-card li {
+      margin-bottom: 0.75rem;
+    }
+
+    @media (max-width: 600px) {
+      .project-year {
+        float: none;
+        display: inline-block;
+        margin-top: 0.5rem;
+      }
+    }
+
 
     
 
@@ -77,7 +144,7 @@
 
           <div class="bio-column">
             <p>
-              I am a Research Associate at the <strong>Indian Institute of Science (IISc), Bangalore</strong>. I am currently contributing to the development of India's first Scientific Foundation Model. I obtained my Master of Science in Mathematics from the National Institute of Technology, Kurukshetra (2023-2025), mentored by Prof. A.S.V. Ravi Kanth. Previously, I obtained a B.S. in Mathematics (Honours) at the University of Delhi (2020-2023). <strong style="color: #4f46e5; font-weight: bold;">I am actively looking for a PhD position.</strong>
+              I am a Research Associate at the <strong>Indian Institute of Science (IISc), Bangalore</strong>. I am currently contributing to the development of India's first Scientific Foundation Model. I obtained my Master of Science in Mathematics from the National Institute of Technology, Kurukshetra (2023-2025), mentored by Prof. A.S.V. Ravi Kanth. Previously, I obtained a B.S. in Mathematics (Honours) at the University of Delhi (2020-2023). <strong style="color: #4f46e5;">I am actively looking for a PhD position.</strong>
             </p>
 
             <p>
