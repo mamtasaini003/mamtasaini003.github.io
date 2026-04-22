@@ -20,38 +20,6 @@
 
 <body>
 
-    <!-- HEADER -->
-    <header class="site-header">
-        <div class="wrapper">
-            <span class="site-title"><strong>Mamta</strong> Saini</span>
-            <nav class="site-nav">
-                <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-                <label for="nav-trigger">
-                    <span class="menu-icon">
-                        <svg viewBox="0 0 18 15" width="18px" height="15px">
-                            <path fill="#424242"
-                                d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0h15.031C17.335,0,18,0.665,18,1.484L18,1.484z" />
-                            <path fill="#424242"
-                                d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z" />
-                            <path fill="#424242"
-                                d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z" />
-                        </svg>
-                    </span>
-                </label>
-                <div class="trigger">
-                    <a class="page-link" href="/">About</a>
-                    <a class="page-link" href="/Education">Education</a>
-                    <a class="page-link" href="/Experience">Experience</a>
-                    <a class="page-link" href="/Projects">Projects</a>
-                    <a class="page-link" href="/Publications">Publications</a>
-                    <a class="page-link" href="/Blog">Blog</a>
-                    <a class="page-link" href="/PDFs/Mamta CV.pdf">Download CV</a>
-                </div>
-            </nav>
-        </div>
-    </header>
-
-    <!-- MAIN CONTENT -->
     <div class="page-content">
         <div class="wrapper">
             <div class="post">
@@ -60,185 +28,68 @@
                     <h1 class="post-title">Projects</h1>
                 </header>
 
-                <article class="post-content clearfix">
+                <article class="post-content clearfix" style="font-size: 1rem; color: #333;">
 
-                    <!-- Project 1 (New) -->
-                    <div class="project-card">
-                        <h3>LLM4PDE: Language-Conditioned Neural PDE Solver <span class="project-year">March 2026 – Present</span></h3>
-                        <ul>
-                            <li>Proposed <b>LLM4PDE</b>, conditioning neural PDE solvers on symbolic PDE, boundary, and coefficient embeddings.</li>
-                            <li>Combined language-style PDE encoding with operator-learning backbones to improve cross-PDE generalization in data-scarce regimes.</li>
-                        </ul>
-                    </div>
+                    <ul style="list-style-type: none; padding-left: 0;">
+                        <li style="margin-bottom: 2rem;">
+                            <strong>LLM4PDE: Language-Conditioned Neural PDE Solver</strong> <span style="float:right;">March 2026 – Present</span><br>
+                            <ul style="margin-top: 0.5rem; padding-left: 1.2rem; color: #333; list-style-type: disc;">
+                                <li>Proposed <b>LLM4PDE</b>, conditioning neural PDE solvers on symbolic PDE, boundary, and coefficient embeddings.</li>
+                                <li>Combined language-style PDE encoding with operator-learning backbones to improve cross-PDE generalization in data-scarce regimes.</li>
+                            </ul>
+                        </li>
 
-                    <div class="project-card">
-                        <h3>Latent Reciprocity Network for Neural Operators <span class="project-year">Nov 2025 – Dec
-                                2025</span></h3>
-                        <h4><a href="https://github.com/mamtasaini003/LRN" target="_blank"><i class="fab fa-github"></i>
-                                GitHub Repository</a></h4>
-                        <ul>
-                            <li>Implemented LRN-FNO with a global reproducibility framework and fine-grained loss
-                                balancing architecture ($\lambda_{NSE}$), establishing a stable performance floor across
-                                three physical regimes.</li>
-                            <li>Achieved consistent improvements over vanilla FNO: <b>+10.55%</b> on Darcy Flow (0.1498
-                                $\rightarrow$ 0.1340), <b>+9.09%</b> on Navier–Stokes (0.2276 $\rightarrow$ 0.2070), and
-                                <b>+3.42%</b> on Burgers 2D (0.0146 $\rightarrow$ 0.0141).</li>
-                        </ul>
-                    </div>
+                        <li style="margin-bottom: 2rem;">
+                            <strong>Latent Reciprocity Network for Neural Operators</strong> <span style="float:right;">Nov 2025 – Dec 2025</span><br>
+                            <a href="https://github.com/mamtasaini003/LRN" target="_blank">[GitHub]</a>
+                            <ul style="margin-top: 0.5rem; padding-left: 1.2rem; color: #333; list-style-type: disc;">
+                                <li>Implemented LRN-FNO with a global reproducibility framework and fine-grained loss balancing architecture, establishing a stable performance floor across three physical regimes.</li>
+                                <li>Achieved consistent improvements over vanilla FNO: <b>+10.55%</b> on Darcy Flow, <b>+9.09%</b> on Navier–Stokes, and <b>+3.42%</b> on Burgers 2D.</li>
+                            </ul>
+                        </li>
 
-                    <!-- Project 2 -->
-                    <div class="project-card">
-                        <h3>Physics-Informed Neural Transformer Operator with Geometry Variant (PINTO-G) <span
-                                class="project-year">Oct 2025 – Present</span></h3>
-                        <h4><a href="https://github.com/mamtasaini003/PINTO" target="_blank"><i
-                                    class="fab fa-github"></i> GitHub Repository</a></h4>
-                        <ul>
-                            <li>Developing a hybrid framework that integrates the Physics-Informed Neural Transformer
-                                Operator (PINTO) with Geometry-Informed Neural Operator (GNO) architectures.</li>
-                            <li>Aims to enhance spatial reasoning and physical consistency, improving generalization
-                                across diverse geometries and boundary conditions by combining transformer-based
-                                attention with geometry-aware operator learning.</li>
-                        </ul>
-                    </div>
+                        <li style="margin-bottom: 2rem;">
+                            <strong>Physics-Informed Neural Transformer Operator with Geometry Variant (PINTO-G)</strong> <span style="float:right;">Oct 2025 – Present</span><br>
+                            <a href="https://github.com/mamtasaini003/PINTO" target="_blank">[GitHub]</a>
+                            <ul style="margin-top: 0.5rem; padding-left: 1.2rem; color: #333; list-style-type: disc;">
+                                <li>Developing a hybrid framework that integrates the Physics-Informed Neural Transformer Operator (PINTO) with Geometry-Informed Neural Operator (GNO) architectures.</li>
+                                <li>Aims to enhance spatial reasoning and physical consistency, improving generalization across diverse geometries and boundary conditions.</li>
+                            </ul>
+                        </li>
 
-                    <!-- Project 3 -->
-                    <div class="project-card">
-                        <h3>Study on Latent Space Behaviour of Fourier Neural Operator <span class="project-year">Aug
-                                2025 – Sept 2025</span></h3>
-                        <h4><a href="https://github.com/mamtasaini003/neuraloperator/tree/main/scripts"
-                                target="_blank"><i class="fab fa-github"></i> GitHub Repository</a></h4>
-                        <ul>
-                            <li>Introduced latent-space regularization and loss functions within the Fourier Neural
-                                Operator to enhance feature learning and convergence stability.</li>
-                            <li>Achieved relative error reductions of <b>13.70%</b> on Burgers’, <b>11.25%</b> on Darcy
-                                flow, and <b>18.84%</b> on Navier–Stokes ($128\times128$), demonstrating consistent
-                                accuracy improvements.</li>
-                        </ul>
-                    </div>
+                        <li style="margin-bottom: 2rem;">
+                            <strong>Study on Latent Space Behaviour of Fourier Neural Operator</strong> <span style="float:right;">Aug 2025 – Sept 2025</span><br>
+                            <a href="https://github.com/mamtasaini003/neuraloperator/tree/main/scripts" target="_blank">[GitHub]</a>
+                            <ul style="margin-top: 0.5rem; padding-left: 1.2rem; color: #333; list-style-type: disc;">
+                                <li>Introduced latent-space regularization and loss functions within the Fourier Neural Operator to enhance feature learning and convergence stability.</li>
+                                <li>Achieved relative error reductions of <b>13.70%</b> on Burgers’, <b>11.25%</b> on Darcy flow, and <b>18.84%</b> on Navier–Stokes.</li>
+                            </ul>
+                        </li>
 
-                    <!-- Project 4 -->
-                    <div class="project-card">
-                        <h3>Wavelet Variant of Graph-Informed Neural Operator <span class="project-year">May 2025 – Aug
-                                2025</span></h3>
-                        <h4><a href="https://github.com/mamtasaini003/gino-wavelet-variant" target="_blank"><i
-                                    class="fab fa-github"></i> GitHub Repository</a></h4>
-                        <ul>
-                            <li>Designed a modified version of the Geometry-Informed Neural Operator (GINO) by
-                                integrating a wavelet-based layer in place of the linear transformer within the FNO
-                                architecture.</li>
-                            <li>Achieved improved performance, recording a relative error of around <b>2%</b> for the
-                                transient case.</li>
-                        </ul>
-                    </div>
+                        <li style="margin-bottom: 2rem;">
+                            <strong>Wavelet Variant of Graph-Informed Neural Operator</strong> <span style="float:right;">May 2025 – Aug 2025</span><br>
+                            <a href="https://github.com/mamtasaini003/gino-wavelet-variant" target="_blank">[GitHub]</a>
+                            <ul style="margin-top: 0.5rem; padding-left: 1.2rem; color: #333; list-style-type: disc;">
+                                <li>Designed a modified version of the Geometry-Informed Neural Operator (GINO) by integrating a wavelet-based layer.</li>
+                                <li>Achieved improved performance, recording a relative error of around <b>2%</b> for the transient case.</li>
+                            </ul>
+                        </li>
 
-                    <!-- Project 5 -->
-                    <div class="project-card">
-                        <h3>Fractional PINNs for solving Time-Fractional Burgers–Huxley <span class="project-year">July
-                                2024 – May 2025</span></h3>
-                        <h4><a href="https://github.com/mamtasaini003/fPINNs" target="_blank"><i
-                                    class="fab fa-github"></i> GitHub Repository</a></h4>
-                        <ul>
-                            <li>Implemented a Physics-Informed Neural Network (PINN) framework extended with fractional
-                                derivatives to solve the time-fractional Burgers–Huxley equation.</li>
-                            <li>Incorporated fractional-order operators in the loss formulation to accurately capture
-                                memory effects and non-local temporal dynamics.</li>
-                            <li>Validated the effectiveness of fractional PINNs for nonlinear fractional PDEs with
-                                stable convergence and accurate solution profiles.</li>
-                        </ul>
-                    </div>
+                        <li style="margin-bottom: 2rem;">
+                            <strong>Fractional PINNs for solving Time-Fractional Burgers–Huxley</strong> <span style="float:right;">July 2024 – May 2025</span><br>
+                            <a href="https://github.com/mamtasaini003/fPINNs" target="_blank">[GitHub]</a>
+                            <ul style="margin-top: 0.5rem; padding-left: 1.2rem; color: #333; list-style-type: disc;">
+                                <li>Implemented a Physics-Informed Neural Network (PINN) framework extended with fractional derivatives.</li>
+                                <li>Incorporated fractional-order operators in the loss formulation to accurately capture memory effects.</li>
+                            </ul>
+                        </li>
+                    </ul>
 
                 </article>
 
             </div>
         </div>
     </div>
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="wrapper">
-            &copy; Copyright 2025 Mamta Saini.
-            Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a
-                href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted on <a
-                href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="../assets/js/common.js"></script>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.js"></script>
-    <script src="/assets/js/katex.js"></script>
-
-  <style>
-    .project-card {
-      background: var(--white);
-      border-left: 5px solid var(--primary);
-      padding: 1.5rem 2rem;
-      margin-bottom: 2.5rem;
-      border-radius: 12px;
-      box-shadow: var(--shadow);
-      transition: var(--transition);
-    }
-
-    .project-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
-      border-left-color: var(--accent);
-    }
-
-    .project-card h3 {
-      margin-top: 0;
-      font-size: 1.35rem;
-      color: var(--secondary);
-      font-weight: 700;
-      line-height: 1.3;
-    }
-
-    .project-card h4 {
-      margin: 0.5rem 0 1rem;
-      font-size: 1rem;
-    }
-
-    .project-card h4 a {
-      color: var(--text-light);
-      text-decoration: none;
-      transition: var(--transition);
-    }
-
-    .project-card h4 a:hover {
-      color: var(--primary);
-    }
-
-    .project-year {
-      font-size: 0.85rem;
-      color: var(--primary);
-      float: right;
-      background: rgba(100, 108, 255, 0.1);
-      padding: 4px 12px;
-      border-radius: 20px;
-      font-weight: 600;
-    }
-
-    .project-card ul {
-      margin: 1rem 0 0;
-      padding-left: 1.2rem;
-      color: var(--text);
-    }
-
-    .project-card li {
-      margin-bottom: 0.75rem;
-    }
-
-    @media (max-width: 600px) {
-      .project-year {
-        float: none;
-        display: inline-block;
-        margin-top: 0.5rem;
-      }
-    }
-  </style>
-
 
 </body>
 
